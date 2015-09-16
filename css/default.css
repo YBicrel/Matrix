@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+/*** Custom style ***/
+.sheet-container {
+    /*margin-left: 500px;*/
+    overflow-x: scroll;
+}
+
+.sheet-container table {
+max-width: none !important;
+border-collapse:collapse;
+}
+
+.sheet-container table th, .sheet-container table td {
+    min-height: 30px;
+    max-height: 30px;
+    line-height:30px;
+}
+
+.sheet-container table th {
+    background-color:#fff;
+    min-height: 45px;
+    max-height: 45px;
+    line-height:45px;
+    color: rgba(102,102,102,1);
+    font-weight: 500;
+}
+
+.sheet-container table td.row-hover {
+    background-color: lightgoldenrodyellow !important;
+    cursor: default;
+}
+.sheet-container table td.editable-row-hover {
+    background-color: #98D7E2 !important;
+}
+.sheet-container table td.editable-hover {
+    background-color: #3185bc !important;
+    cursor: text;
+}
+.sheet-container table td.right {
+    text-align:right;
+            
+}
+        
+.sheet-container table thead tr th.first-col, .sheet-container table tbody tr td.first-col {
+    width: 300px;
+    border-left-width: 10px !important;
+    border-left-style: groove !important;
+}
+
+.sheet-container table thead th.first-col {
+    border-left: 10px solid transparent !important;
+}
+.sheet-container table thead tr th.first-col, .sheet-container table tbody tr td.first-col {
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    background-color: #f0f0f0;
+    margin-top: -1px;
+    border: 1px solid rgba(102,102,102,0.1);
+}
+.sheet-container table thead tr th.first-col{
+    background: #fff;
+    text-align: left;
+}
+
+.sheet-container table thead tr th.param, .sheet-container table tbody tr td.param {
+    position: absolute;
+    width: 100px;
+    /*left: 300px;*/
+    background: rgba(102,102,102,0.2);
+    margin-top: -1px;
+    border: 1px solid rgba(102,102,102,0.1);
+    overflow:hidden;
+}
+.sheet-container table thead tr th.param.hidden, .sheet-container table tbody tr td.param.hidden {
+    display:none;
+    border:none;
+    padding:0;
+    width:0;
+}
+
+.sheet-container table thead tr th.week, .sheet-container table tbody tr td.week {
+    min-width: 80px;
+    max-width: 80px;
+    margin-top: -1px;
+    border: 1px solid rgba(102,102,102,0.1);
+}
+
+.sheet-container table thead tr th.final, .sheet-container table tbody tr td.final {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    background: rgba(102,102,102,0.2);
+    margin-top: -1px;
+    border: 1px solid rgba(102,102,102,0.1);
+}
+
+
+.sheet-container table tbody td div.treegrid-indent {
+    height: 30px;
+    float: left;
+}
+
+.sheet-container table tbody td div.treegrid-expander 
+{
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.sheet-container table tbody td div.treegrid-expander.minus 
+    {
+    background: url('../img/minus.png') no-repeat;
+    background-position: center center;
+    cursor: pointer;
+                
+}
+
+.sheet-container table tbody td div.treegrid-expander.plus 
+    {
+    background: url('../img/plus.png') no-repeat;
+    background-position: center center;
+    cursor: pointer;
+
+}
+
+.sheet-container table tbody td span.treegrid-nodetext {
+    clear: both;
+    vertical-align: top;
+}
+.sheet-container table input.editfield
+{
+    background-color:#3185bc;
+    border: none;
+    width: 100%;
+    height: 28px;
+    text-align: right;
+    line-height:25px;
+}
+
+.sheet-container table thead tr.header th.first-col div.toggleparamsbtn{
+    width: 25%;
+    height: 45px;
+    margin-right: 5%;
+    display: inline-block;
+}
+
+.sheet-container table thead tr.header th.first-col div.toggleparamsbtn.show 
+    {
+    background: url('../img/show.png') no-repeat;
+    background-position: right center;
+    cursor: pointer;
+                
+}
+
+.sheet-container table thead tr.header th.first-col div.toggleparamsbtn.hide 
+    {
+    background: url('../img/hide.png') no-repeat;
+    background-position: right center;
+    cursor: pointer;
+
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn{
+    width: 70%;
+    height: 45px;
+    margin-left: 0;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height:22px;
+    vertical-align: top;
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglegroupbtn{
+    width: 100%;
+    height: 22px;
+    padding-left: 30px;
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglegroupbtn.show{
+    background: url('../img/on_b.png') no-repeat;
+    background-position: left center;
+    cursor: pointer;  
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglegroupbtn.hide{
+    background: url('../img/off.png') no-repeat;
+    background-position: left center;
+    cursor: pointer;
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglecampaignbtn{
+    width: 100%;
+    height: 22px;
+    padding-left: 30px;
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglecampaignbtn.show{
+    background: url('../img/on_r.png') no-repeat;
+    background-position: left center;
+    cursor: pointer;  
+}
+
+.sheet-container table thead tr.header th.first-col div.togglelevelsbtn div.togglecampaignbtn.hide{
+    background: url('../img/off.png') no-repeat;
+    background-position: left center;
+    cursor: pointer;
+}
+
+/*Tabs*/
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: rgba(102,102,102,0.5);
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+    text-transform: uppercase;
+}
+
+ul.tabs li.current{
+	border-bottom: 2px solid rgba(102,102,102,1);
+	color: #666666;
+}
+
+.tab-content{
+	border-top: 1px solid #ededed;
+	padding: 0px;
+}
+
+/*Mask*/
+.mask
+{
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(102,102,102,0.2);
+    z-index:100;
+}
